@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-color: #000; /* Black background */
+    }
+
+    /* Animation for text */
+    .animated-text {
+        display: block;
+        overflow: hidden;
+        animation: animateText 3s infinite; /* Animation duration and infinite iteration */
+        margin-bottom: 20px; /* Adjust margin to create space between lines */
+    }
+
+    /* Styling for promotional lines */
+    .promotional-line {
+        font-size: 24px; /* Increase font size */
+        font-weight: bold; /* Add bold weight */
+        color: #fff; /* White text color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+    }
+
+    @keyframes animateText {
+        0% {
+            transform: scale(1); /* Initial scale */
+        }
+        100% {
+            transform: scale(1.05); /* Slightly smaller zoom effect */
+        }
+    }
+
+    /* Add margin to the bottom of the button */
+    .get-started-button {
+        margin-bottom: 50px;
+    }
+</style>
+
+<div class="container-fluid text-light py-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="text-center">
+                <h1 class="display-3 font-weight-bold mb-4">Welcome to Mediscan!</h1>
+                <p class="lead animated-text promotional-line">Empowering Health through Technology</p>
+                <p class="mb-4 animated-text promotional-line">Discover the future of healthcare with Mediscan - where innovation meets care.</p>
+                <a href="/register" class="btn btn-primary btn-lg get-started-button">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <h3>Medical Report Analysis</h3>
+            <p>This website scans and analyzes medical reports to provide insights into your health condition.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h3>Accurate Results</h3>
+            <p>Get the best and most accurate results to understand what aspects of your health you should focus on.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h3>Doctor Recommendations</h3>
+            <p>Receive recommendations regarding health issues and find the right doctors for your needs.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
