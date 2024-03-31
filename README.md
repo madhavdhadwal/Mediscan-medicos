@@ -1,5 +1,5 @@
 # Mediscan
-A medical report scanner and analyser!
+A medical report scanner and analyzer!!
 
 ## Contributors
 - [@madhavdhadwal](https://github.com/madhavdhadwal)
